@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block contenido %}
+
+<h1>Eliminar producto</h1>
+
+<p>Seguro que desea eliminar el producto?</p>
+
+<form method="POST">
+    {% csrf_token %}
+    <input type="submit" action="" value="Si, eliminar." />
+</form>
+<a href="{% url 'apps.calzados:listar_calzados' %}" class="btn btn-primary" style="font-size: small;">No, volver.</a>
+{% endblock %}
