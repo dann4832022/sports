@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Enviar Mensaje</title>
+</head>
+<body>
+    <h1>Enviar Mensaje</h1>
+    <!-- Formulario para enviar mensajes -->
+    <form method="post" action="{% url 'apps.mensaje:enviar_mensaje' %}">
+        {% csrf_token %}
+        <!-- Campos del formulario (remitente, destinatario, contenido, etc.) -->
+
+        <input type="text" name="remitente">
+        <input type="text" name="destinatario">
+        <textarea name="contenido"></textarea>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
+

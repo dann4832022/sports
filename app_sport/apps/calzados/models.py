@@ -20,7 +20,7 @@ class Calzados(models.Model, LoginRequiredMixin):
     fecha_agregado = models.DateTimeField(auto_now_add=True)
     colaborador = models.ForeignKey(Usuarios, on_delete=models.SET_NULL, null=True, default=1)
     published = models.DateTimeField(default=timezone.now)
-    imagen = models.ImageField(null=True, blank=True, upload_to='libros', default='libros/libro_default.png')
+    imagen = models.ImageField(null=True, blank=True, upload_to='calzados', default='calzados/calzados_default.png')
     categoria = models.ForeignKey(Categorias, on_delete=models.SET_NULL, null=True)
 
     def __str__(self):

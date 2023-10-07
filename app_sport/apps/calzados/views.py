@@ -83,7 +83,7 @@ def ListarCalzadosPorCategoria(request, categoria):
 
 def calzados_detalle(request, id):
     calzados = Calzados.objects.get(id=id)
-    opiniones = Opinion.objects.filter(libro=id)
+    opiniones = Opinion.objects.filter(calzados=id)
     form = OpinionForm(request.POST)
 
     if form.is_valid():

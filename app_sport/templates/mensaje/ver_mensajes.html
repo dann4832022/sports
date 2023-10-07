@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mensajes</title>
+</head>
+<body>
+    <h1>Tus Mensajes</h1>
+
+    <ul>
+        {% for mensaje in mensajes_intercalados %}
+            <li>
+                {% if mensaje.tipo == 'remitente' %}
+                    <strong>De:</strong> {{ mensaje.remitente }}
+                {% else %}
+                    <strong>Para:</strong> {{ mensaje.destinatario }}
+                {% endif %}
+                <br>
+                <strong>Fecha:</strong> {{ mensaje.fecha }}
+                <br>
+                {{ mensaje.contenido }}
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

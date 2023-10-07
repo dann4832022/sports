@@ -72,6 +72,12 @@
                 {% endfor %}
                 <div class="mb-3 display-7">
                     {% include 'opiniones/agregar_opinion.html' %}
+                    {% include 'mensaje/enviar_mensaje.html' %}
+
+
+                </div>
+                <div>
+                    <li><a class="dropdown-item" href="{% url 'apps.mensaje:ver_mensajes' %}"> Ver Mensajes</a></li>
                 </div>
             </div>
         </div>

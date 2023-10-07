@@ -1,6 +1,9 @@
 from pathlib import Path
 from django.urls import reverse_lazy
 
+from .local import *
+
+
 import os
 
 ######################################################################################################
@@ -14,6 +17,7 @@ SECRET_KEY = 'django-insecure-vf4_6_bple_0w0)e69_h**iqlf@4hrghk_bdy_@61r(&dk_s^k
 AUTH_USER_MODEL = 'usuarios.Usuarios'
 
 
+
 LOGIN_URL = reverse_lazy('apps.usuarios:iniciar_sesion')
 LOGIN_REDIRECT_URL = reverse_lazy('inicio')
 LOGOUT_REDIRECT_URL = reverse_lazy('inicio')
@@ -21,6 +25,7 @@ LOGOUT_REDIRECT_URL = reverse_lazy('inicio')
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
+    
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
@@ -28,6 +33,11 @@ INSTALLED_APPS = [
     'apps.usuarios',
     'apps.calzados',
     'apps.opiniones',
+    'apps.mensaje',
+
+ 
+ 
+
 
 ]
 

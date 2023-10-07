@@ -12,6 +12,7 @@ urlpatterns = [
     path('usuario/', include('apps.usuarios.urls')),
     path('calzados/', include('apps.calzados.urls')),
     path("opiniones/", include('apps.opiniones.urls')),
+    path("mensaje/", include('apps.mensaje.urls')),
 
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
