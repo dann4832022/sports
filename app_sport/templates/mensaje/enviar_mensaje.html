@@ -4,15 +4,16 @@
     <title>Enviar Mensaje</title>
 </head>
 <body>
-    <h1>Enviar Mensaje</h1>
+    <h3>Contactanos</h3>
+    <p><strong>Dejanos tu nombre, numero de Whatsapp y modelo que te interesa</strong></p>
     <!-- Formulario para enviar mensajes -->
     <form method="post" action="{% url 'apps.mensaje:enviar_mensaje' %}">
         {% csrf_token %}
         <!-- Campos del formulario (remitente, destinatario, contenido, etc.) -->
-
-        <input type="text" name="remitente">
-        <input type="text" name="destinatario">
-        <textarea name="contenido"></textarea>
+<!-- 
+        <input type="text" placeholder="Dejanos tu nombre" name="remitente"> -->
+        <!-- <input type="text" name="destinatario"> -->
+        <textarea    name="contenido" rows="4" cols="80"></textarea><br>
         <input type="submit" value="Enviar">
     </form>
 </body>

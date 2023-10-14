@@ -1,3 +1,20 @@
 /* .body {
     background-color: aqua;
 } */
+
+#marca {
+    background-color: aqua;
+}
+
+ul.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+li.nav-item {
+    margin-right: 30px; /* Opcional: agregar espaciado entre los elementos de la lista */
+}
+
+#registro{
+    margin-top: 20px;
+}

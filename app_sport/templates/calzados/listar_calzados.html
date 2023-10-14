@@ -6,13 +6,11 @@
 {% endblock %}
 
 {% block navegacion %}
-
-{% for i in categorias %}
-<li class="nav-item">
-    <a class="nav-link" aria-current="page" href="{% url 'apps.calzados:listar_por_categoria' i.nombre %}">{{i.nombre}}</a>
-</li>
-{% endfor %}
+{% include 'navegacion.html' %}
 {% endblock %}
+
+
+
 
 {% block contenido %}
 

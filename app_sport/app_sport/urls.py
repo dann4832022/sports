@@ -7,8 +7,8 @@ from django.conf import settings
 from .views import inicio
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('inicio/', inicio, name='inicio'),
+    # path('admin/', admin.site.urls),
+    path('', inicio, name='inicio'),
     path('usuario/', include('apps.usuarios.urls')),
     path('calzados/', include('apps.calzados.urls')),
     path("opiniones/", include('apps.opiniones.urls')),

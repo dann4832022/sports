@@ -28,15 +28,21 @@
                             </div>
                             {{form.as_p}}
                             <input type="submit" value="Iniciar sesión">
+
+                        </div>
+                        <div id="registro">
+                        <ul class="nav-list">
+        
+                            <li class="nav-item">
+                                <h6>Crea tu usuario</h6>
+                                <a class="nav-link" href="{% url 'apps.usuarios:registrar' %}">Registrase</a>
+                            </li>
                         </div>
                     </div>
-                    <!-- <div class="col-lg-7 offset-lg-1 col-12">
-                        <div class="image-wrapper">
-                            <img class="w-75" src="{% static 'img/login.jpg' %}" style="height:200px" alt="">
-                        </div>
-                    </div> -->
+               
                 </div>
             </div>
+     
         </section>
     </form>
 </div>
