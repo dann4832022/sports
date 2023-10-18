@@ -37,7 +37,7 @@ class ModificarCalzados(LoginRequiredMixin, UpdateView):
 class EliminarCalzados(LoginRequiredMixin, DeleteView):
     model = Calzados
     template_name = 'calzados/confirma_eliminar.html'
-    success_url = reverse_lazy('apps.calzados:listar_libros')
+    success_url = reverse_lazy('apps.calzados:listar_calzados')
 
 
 
