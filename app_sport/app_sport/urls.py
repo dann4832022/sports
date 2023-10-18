@@ -5,10 +5,12 @@ from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.conf import settings
 
 from .views import inicio
+from apps.calzados.views import *
 
 urlpatterns = [
     # path('admin/', admin.site.urls),
-    path('', inicio, name='inicio'),
+    # path('', inicio, name='inicio'),
+    path("", ListarCalazados.as_view(), name='inicio'),
     path('usuario/', include('apps.usuarios.urls')),
     path('calzados/', include('apps.calzados.urls')),
     path("opiniones/", include('apps.opiniones.urls')),

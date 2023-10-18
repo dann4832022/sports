@@ -18,3 +18,21 @@ li.nav-item {
 #registro{
     margin-top: 20px;
 }
+
+.zoom-image-container {
+    overflow: hidden;
+    position: relative;
+}
+
+.zoom-image {
+    width: 100%;
+    transition: transform 0.2s;
+}
+
+.zoom-image:hover {
+    transform: scale(2);
+ } /* Cambia el valor para ajustar el
+
+  
+
+ 

@@ -29,7 +29,7 @@ def enviar_mensaje(request):
             # Resto de la lógica de redirección o respuesta
 
     form = MensajeForm()
-    return render(request, 'mensaje/ver_mensajes.html', {'form': form})
+    return render(request, 'mensaje/mensaje_enviado.html', {'form': form})
 
 
 from django.db.models import F
