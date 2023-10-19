@@ -31,8 +31,42 @@ li.nav-item {
 
 .zoom-image:hover {
     transform: scale(2);
- } /* Cambia el valor para ajustar el
+ }
 
-  
 
+ .pieDePagina {
+    display: flex;
+    margin-top: 5px;
+    background-color: black;
+    height: auto;
+    padding-left: 20px;
+    text-align: center;
+    padding-bottom: 15px;
+ }
  
+#pieDePaginaUno{
+    width: 380px;
+    margin-top: 15px;
+    color: white;
+    padding-left: 20px;
+    margin-left: 40px;
+    font-size: 18px;
+    border-right: 1px solid white;
+}
+
+#pieDePaginaUno:last-child {
+    border-right: none;
+}
+
+footer{
+    background-color: black;
+    height: auto;
+    padding-bottom: 10px;
+    color: white;
+   
+}
+
+.final {
+    padding-left: 30px;
+}
+
